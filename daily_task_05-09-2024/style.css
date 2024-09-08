@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.whole_body{
+    padding: 0px 100px;
+}
+
+.nav_icon{
+    width: 101px;
+    height: 62px;
+}
+
+nav{
+    font-family: monospace;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+nav div:nth-child(2){
+    
+    /* justify-content: space-between; */
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li{
+    padding: 0 50px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+
+a:hover{
+   color: #4352c4; 
+}
+
+a:active{
+    color: #4352c4;
+    font-weight: bold;  
+}
+
+.btn{
+    /* justify-self: end; */
+    /*  */
+    align-items: end;
+    width: 140px;
+    height: 50px;
+    background: #5669FF;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.button_container{
+    margin-left: auto;
+}
+
+.links{
+    width: auto;
+}
+
+/* nav styling */
+
+.hero{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left_hero{
+    width: 50%;
+}
+
+.head_text{
+    font-weight: 600;
+    font-size: 52px;
+}
+
+.colored_text{
+    color: #5669FF;
+}
+
+.mail_box button{
+    border: none;
+    border-radius: 10px;
+    background: #5669FF;
+    color: white;
+    font-size: 15px;
+    height: 46px;
+    width: 80px;
+}
+
+input[type=email]{
+    border: none;
+    height: 56px;
+    width: 375px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.right_hero{
+    display: flex;
+    /* overflow: hidden; */
+}
+#image-1{
+    width: 702px;
+}
+
+#image-2{
+    margin-left: -300px;
+}
+
+/* about styling */
+
+.about{
+    text-align: center;
+}
+
+.about section p{
+    width: 550px;
+    margin: 0 auto;
+}
+
+.about>section:nth-child(2){
+    /* background: red; */
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 389px;
+    height: 244px;
+    background: #f5f5f5;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.about section .card img{
+    width: 30px;
+}
+
+.about section .card p{
+    /* background: red; */
+    width: 313px;
+    /* height: 10px; */
+}
+
