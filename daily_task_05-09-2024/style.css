@@ -1,166 +1,355 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.whole_body{
-    padding: 0px 100px;
+.whole_body {
+  margin: 0 auto;
+  padding: 0px 100px;
+  max-width: 1630px;
+  /* background: #000; */
 }
 
-.nav_icon{
-    width: 101px;
-    height: 62px;
+.nav_icon {
+  width: 101px;
+  height: 62px;
 }
 
-nav{
-    font-family: monospace;
-    width: 100%;
-    /* height: 100%; */
-    display: flex;
-    padding-top: 20px;
-    align-items: center;
-    /* justify-content: space-between; */
+nav {
+  font-family: monospace;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  /* justify-content: space-between; */
 }
 
-nav div:nth-child(2){
-    
-    /* justify-content: space-between; */
+nav div:nth-child(2) {
+  /* justify-content: space-between; */
 }
 
-nav ul{
-    display: flex;
-    list-style: none;
-    
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-nav ul li{
-    padding: 0 50px;
+nav ul li {
+  padding: 0 50px;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(44, 44, 44);
+a {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
 }
 
-a:hover{
-   color: #4352c4; 
+a:hover {
+  color: #4352c4;
 }
 
-a:active{
-    color: #4352c4;
-    font-weight: bold;  
+a:active {
+  color: #4352c4;
+  font-weight: bold;
 }
 
-.btn{
-    /* justify-self: end; */
-    /*  */
-    align-items: end;
-    width: 140px;
-    height: 50px;
-    background: #5669FF;
-    color: #ffffff;
-    border-radius: 10px;
-    border: 0px;
+.btn {
+  /* justify-self: end; */
+  /*  */
+  align-items: end;
+  width: 140px;
+  height: 50px;
+  background: #5669ff;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 0px;
 }
 
-.button_container{
-    margin-left: auto;
+.btn:hover {
+  cursor: pointer;
 }
 
-.links{
-    width: auto;
+.button_container {
+  margin-left: auto;
+}
+
+.links {
+  width: auto;
 }
 
 /* nav styling */
 
-.hero{
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+.hero {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
-.left_hero{
-    width: 50%;
+.left_hero {
+  width: 50%;
 }
 
-.head_text{
-    font-weight: 600;
-    font-size: 52px;
+.head_text {
+  font-weight: 600;
+  font-size: 52px;
 }
 
-.colored_text{
-    color: #5669FF;
+.colored_text {
+  color: #5669ff;
 }
 
-.mail_box button{
-    border: none;
-    border-radius: 10px;
-    background: #5669FF;
-    color: white;
-    font-size: 15px;
-    height: 46px;
-    width: 80px;
+.mail_box button {
+  border: none;
+  border-radius: 10px;
+  background: #5669ff;
+  color: white;
+  font-size: 15px;
+  height: 46px;
+  width: 80px;
 }
 
-input[type=email]{
-    border: none;
-    height: 56px;
-    width: 375px;
-    margin-top: 20px;
-    padding-left: 30px;
+input[type="email"] {
+  border: none;
+  height: 56px;
+  width: 375px;
+  margin-top: 20px;
+  padding-left: 30px;
 }
 
-.right_hero{
-    display: flex;
-    /* overflow: hidden; */
+.right_hero {
+  display: flex;
+  /* overflow: hidden; */
 }
-#image-1{
-    width: 702px;
+#image-1 {
+  width: 702px;
 }
 
-#image-2{
-    margin-left: -300px;
+#image-2 {
+  margin-left: -300px;
 }
 
 /* about styling */
 
-.about{
-    text-align: center;
+.about {
+  text-align: center;
 }
 
-.about section p{
-    width: 550px;
-    margin: 0 auto;
+.about section p {
+  width: 550px;
+  margin: 0 auto;
 }
 
-.about>section:nth-child(2){
-    /* background: red; */
-    margin: 50px 0;
+.about > section:nth-child(2) {
+  /* background: red; */
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 389px;
+  height: 244px;
+  background: #f5f5f5;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.about section .card img {
+  width: 30px;
+}
+
+.about section .card p {
+  /* background: red; */
+  width: 313px;
+  /* height: 10px; */
+}
+
+/* get app section */
+
+.get_app_container {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.get_app_left {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background: #5669ff;
+}
+
+.get_app_right {
+  width: 50%;
+}
+
+.get_app_right div {
+  margin: 30px;
+}
+
+.get_app_right p {
+  width: 543px;
+}
+
+.small_heading {
+  color: #5669ff;
+  font-weight: 600;
+}
+
+.small_heading::before {
+  content: "| ";
+}
+
+/* Information styling */
+.information_container {
+  display: flex;
+  margin-top: 50px;
+}
+
+.information_left {
+  width: 50%;
+  margin-top: 60px;
+}
+
+.information_area {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.single_information {
+  display: flex;
+  margin: 10px 0;
+}
+
+.single_information img {
+  width: 36px;
+  height: 36px;
+  margin-right: 40px;
+}
+
+.single_information div * {
+  margin: 15px;
+}
+
+.information_button {
+  margin-left: 90px;
+}
+
+.information_right {
+  /* background: #000; */
+  width: 50%;
+  margin-left: 30px;
+}
+
+.image_1 {
+  /* width: 320px; */
+  margin-top: -650px;
+  z-index: 10;
+}
+
+.image_2 {
+  margin-left: 250px;
+  margin-top: 200px;
+}
+
+/* contact styling */
+.contact_container {
+  margin: 68px;
+}
+
+#message_heading {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.contact_heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #5669ff;
+  text-underline-offset: 12px;
+}
+
+.contact_info_container {
+  display: flex;
+  margin: 70px;
+}
+
+.contact_left {
+  width: 50%;
+}
+
+form * {
+  width: 100%;
+  margin: 5px 0;
+}
+
+form legend {
+  width: fit-content;
+  padding: 0;
+}
+
+#name {
+  border: none;
+  width: calc(100% - 40px);
+  margin-top: 5px;
+}
+
+#message {
+  padding-top: 15px;
+}
+
+fieldset,
+textarea,
+form input[type="email"] {
+  border: #979797 1px solid;
+  border-radius: 5px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact_send {
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* contact right */
+.contact_right {
+  width: 50%;
+  margin-left: 40px;
+}
+
+.contact_right div{
+    margin: 35px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.card{
-    width: 389px;
-    height: 244px;
-    background: #f5f5f5;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.contact_right div .icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 30px 0 0;
 }
 
-.about section .card img{
-    width: 30px;
+.contact_right div p{
+    font-weight: 400;
+    font-size: 16px;
 }
 
-.about section .card p{
-    /* background: red; */
-    width: 313px;
-    /* height: 10px; */
-}
 
+/* footer */
+footer{
+    width: 100%;
+    height: 480px;
+    background: #5669FF;
+}
