@@ -181,7 +181,24 @@ input[type="email"] {
   display: flex;
   justify-content: center;
   width: 50%;
+  /*  */
+}
+
+.phone_bg_circle{
   background: #5669ff;
+  display: flex;
+  height: 500px ;
+  width: 500px ;
+  border: #8b98ff solid 10px;
+  border-radius: 50%;
+}
+
+.phone_img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: -9px; 
+  margin-top: -80px;
+  margin-bottom: -10px;
 }
 
 .get_app_right {
