@@ -26,9 +26,9 @@ nav {
   /* justify-content: space-between; */
 }
 
-nav div:nth-child(2) {
-  /* justify-content: space-between; */
-}
+/* nav div:nth-child(2) {
+  /* justify-content: space-between; 
+} */
 
 nav ul {
   display: flex;
@@ -352,4 +352,57 @@ footer{
     width: 100%;
     height: 480px;
     background: #5669FF;
+    color: white;
+    display: flex;
+    
+}
+
+.footer_left{
+    width: 50%;
+    margin: 100px 0;
+    padding: 0px 100px;
+}
+
+.footer_left div{
+    /* margin-bottom: 50px; */
+}
+
+.footer_text{
+    font-weight: 400;
+    font-size: 20px;
+    width: 400px;
+    margin: 50px 0;
+}
+
+.footer_right{
+    width: 50%;
+    margin: 100px 100px 0 ;
+}
+
+table{
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+    /* margin-right: 100px; */
+}
+
+th{
+    font-weight: 700;
+}
+
+td,th{
+    margin: 50px;
+    height: 60px;
+}
+
+.copyright_text{
+    width: fit-content;
+    font-weight: 400;
+    font-size: 20px;
+    /* letter-spacing: ; */
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: 100px;
 }
