@@ -1,0 +1,381 @@
+:root {
+  --primaryColor: #06c167;
+  --backgroundColor: #f3fcf7;
+  --textColor: #1d1d1f;
+  --landingWidth: 73.12rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  z-index: 50;
+}
+
+body {
+  margin: 2.63rem 8.44rem;
+}
+
+.background {
+  background-color: var(--backgroundColor);
+  /* background-size: 100% 41.4375rem; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 41.4375rem;
+  width: 100%;
+  z-index: 0;
+}
+
+/* ************************* primary setup end */
+
+/* ************************* navbar styling start */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--primaryColor);
+}
+
+.siteNavigation ul {
+  display: flex;
+  list-style: none;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 31.69rem;
+  justify-content: space-between;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:nth-child(1) {
+  color: var(--primaryColor);
+}
+/* ************************* nav styling ends here */
+
+/* ************************* hero styling start here */
+
+.hero {
+  height: 49.875rem;
+  max-width: var(--landingWidth);
+  margin: 0 auto;
+}
+
+.heroContent {
+  display: flex;
+}
+
+.heroLeftSide {
+  width: 50%;
+}
+
+.heroContent h1 {
+  width: 33.3125rem;
+  font-size: 4.6875rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--textColor);
+  margin-top: 7.12rem;
+}
+
+.heroContent p {
+  width: 33.3125rem;
+  color: rgba(29, 29, 31, 0.75);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.4%; /* 1.424rem */
+
+  margin: 0.69rem 0 1.87rem;
+}
+
+.heroContent button {
+  border: none;
+
+  /* button background */
+  background-color: var(--primaryColor);
+  width: 12.5rem;
+  height: 4.25rem;
+  flex-shrink: 0;
+
+  /* button text */
+  color: #fff;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.heroContent button:hover {
+  cursor: pointer;
+}
+
+.brandLogos {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 8.19rem 0 3.32rem 0;
+  padding: 2.88rem 0;
+}
+
+.heroRightSide {
+  width: 50%;
+}
+
+.imageContainer {
+  /* width: 100%; */
+  width: 29.25rem;
+  height: 39.625rem;
+  flex-shrink: 0;
+  width: fit-content;
+  margin: 5.94rem auto;
+}
+
+#cookingWoman {
+  /* z-index: 20; */
+  flex-shrink: 0;
+}
+
+#dots {
+  /* background-color: #06c167; */
+  z-index: 30;
+  position: relative;
+
+  top: auto;
+  left: 340px;
+  /* right: -50px; */
+  bottom: 150px;
+}
+
+/* ************************* hero styling ends here */
+
+.features {
+  max-width: var(--landingWidth);
+  margin: 7.53rem auto;
+  height: 11.5625rem;
+  flex-shrink: 0;
+  border-top: 1.5px solid #70707026;
+  border-bottom: 1.5px solid #70707026;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.singleFeature {
+  display: flex;
+  align-items: center;
+  color: var(--textColor);
+}
+
+.singleFeature p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0.44rem 0;
+}
+
+.featureHead {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* ************************* hero styling ends here */
+
+/* ************************* benefit styling starts here */
+.ourBenefit {
+  max-width: var(--landingWidth);
+  margin: 0 auto;
+  height: 38rem;
+  display: flex;
+}
+
+.benefitLeft {
+  width: 46.5%;
+  height: 100%;
+  background-color: var(--backgroundColor);
+}
+
+.benefitLeft img {
+  display: flex;
+  margin: 0 auto;
+}
+
+.benefitRight {
+  width: 53.5%;
+  margin: 5.56rem 5.25rem;
+}
+
+.sectionName {
+  color: var(--textColor);
+  font-family: Inter;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sectionHead {
+  color: #1d1d1f;
+  font-family: Inter;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin: 1.25rem 0 4.19rem 0;
+  /* width: 33.5625rem; */
+}
+
+.sectionPoints li {
+  color: #1d1d1f;
+  font-size: 1rem;
+  font-weight: 400;
+
+  margin: 1.31rem 1.38rem;
+  list-style: url("./assets/Icon-awesome-check.png");
+  padding-left: 1.38rem;
+}
+
+.sectionPoints li ::marker {
+  margin: 50px;
+}
+/* ************************* benefit styling ends here */
+
+/* ************************* stars styling starts here */
+.ourStars {
+  max-width: var(--landingWidth);
+  margin: 11.44rem auto;
+  height: 38rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.starsRight {
+  width: 33.8125rem;
+  height: 38rem;
+  background-color: var(--backgroundColor);
+  flex-shrink: 0;
+}
+
+.starsRight img {
+  display: flex;
+  margin-left: auto;
+  width: 27.8125rem;
+  height: 32.0625rem;
+  flex-shrink: 0;
+}
+
+.starsLeft {
+  width: 53.5%;
+  margin: 7.25rem 3.69rem 3.44rem 3.75rem;
+}
+
+.productAndFeedback {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedbackHighlight {
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.feedbackText {
+  color: var(--textColor);
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+
+  margin-top: 1rem;
+  margin-bottom: 3.19rem;
+}
+
+.getPromoBtn {
+  border: none;
+
+  width: 14.5625rem;
+  height: 4.9375rem;
+  flex-shrink: 0;
+
+  background-color: var(--primaryColor);
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.getPromoBtn::after,
+.beforeFooterAd button::after {
+  margin-left: 1.47rem;
+  content: url("./assets/Icon-awesome-long-arrow-alt-right.png");
+}
+
+/* ************************* feature styling starts here */
+.ourFeature {
+  max-width: var(--landingWidth);
+  background: #000;
+}
+
+/* ************************* Our Product styling starts here */
+.ourProduct{
+  max-width: var(--landingWidth);
+  margin: 0 auto;
+  
+}
+
+
+/* ************************* footer ad styling starts here */
+.beforeFooterAd {
+  max-width: var(--landingWidth);
+  margin: 12.06rem auto;
+
+  position: relative;
+}
+
+.footerAdText {
+  color: #fff;
+
+  text-align: center;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 600;
+  width: 49.9375rem;
+}
+
+.bannerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.beforeFooterAd button {
+  color: #fff;
+  background-color: var(--primaryColor);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+
+  width: 13.125rem;
+  height: 4.9375rem;
+  flex-shrink: 0;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.13rem auto;
+}
