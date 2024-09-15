@@ -327,12 +327,90 @@ li:nth-child(1) {
 }
 
 /* ************************* Our Product styling starts here */
-.ourProduct{
+.ourProduct {
   max-width: var(--landingWidth);
   margin: 0 auto;
-  
 }
 
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singleProduct {
+  width: 16.875rem;
+  height: 27.8125rem;
+  border: 2px solid rgba(118, 118, 117, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ei css property ta arektu porte hobe */
+.singleProduct:nth-child(1){
+  border: 2px solid var(--primaryColor);
+}
+
+.productImage {
+  width: 11.875rem;
+  height: 11.875rem;
+  margin: 1.56rem auto 0;
+}
+
+.starIcon {
+  width: 6.20181rem;
+  height: 0.91131rem;
+  flex-shrink: 0;
+  margin: 0.31rem auto;
+}
+
+.productName {
+  color: var(--textColor);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: auto;
+}
+
+.price {
+  display: flex;
+  gap: 0.5rem;
+  margin: auto;
+}
+
+.oldPrice {
+  color: #767675;
+  text-decoration: line-through;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.presentPrice {
+  color: var(--primaryColor);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.buyBtn {
+  width: 11.0625rem;
+  height: 3.5625rem;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+
+  color: var(--primaryColor);
+  background-color: #fff;
+  border: 2px solid var(--primaryColor);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
 
 /* ************************* footer ad styling starts here */
 .beforeFooterAd {
@@ -340,6 +418,20 @@ li:nth-child(1) {
   margin: 12.06rem auto;
 
   position: relative;
+  background-image: url("./assets/veggie-banner.png");
+  max-width: 73.125rem;
+  min-height: 28.6875rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bannerContent {
+  margin: auto;
+
+  align-items: center;
+  width: fit-content;
 }
 
 .footerAdText {
@@ -349,16 +441,9 @@ li:nth-child(1) {
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 600;
-  width: 49.9375rem;
-}
-
-.bannerContent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  width: fit-content;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  /* width: 49.9375rem; */
 }
 
 .beforeFooterAd button {
