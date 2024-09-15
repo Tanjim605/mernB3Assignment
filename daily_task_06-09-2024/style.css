@@ -275,12 +275,14 @@ li:nth-child(1) {
 
 .starsLeft {
   width: 53.5%;
-  margin: 7.25rem 3.69rem 3.44rem 3.75rem;
+  margin: 7.25rem 3.69rem 3.44rem 0;
 }
 
 .productAndFeedback {
   display: flex;
   justify-content: space-between;
+  justify-content: start;
+  gap: 7.13rem;
 }
 
 .feedbackHighlight {
@@ -288,6 +290,7 @@ li:nth-child(1) {
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
+  text-align: center;
 }
 
 .feedbackText {
@@ -323,7 +326,77 @@ li:nth-child(1) {
 /* ************************* feature styling starts here */
 .ourFeature {
   max-width: var(--landingWidth);
-  background: #000;
+  margin: 0 auto;
+  text-align: center;
+
+  margin-bottom: 12.05rem;
+}
+
+.featureContainer div {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.singleFoodFeature {
+  display: flex;
+}
+
+.foodFeatureImage {
+  width: 18.28125rem;
+  height: 18.28125rem;
+  flex-shrink: 0;
+  border: 1.5px solid var(--primaryColor);
+}
+
+.foodFeatureDescription {
+  width: 18.28125rem;
+  height: 18.28125rem;
+  flex-shrink: 0;
+  border: 1.5px solid var(--primaryColor);
+
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  font-style: normal;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.third,.fourth{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.foodFeatureDescription h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 2.31rem;
+  margin-left: 2.34rem;
+}
+
+.foodFeatureDescription p {
+  font-size: 1rem;
+  font-weight: 4 00;
+  margin-top: 1.56rem;
+  margin-left: 2.34rem;
+  margin-bottom: 2.37rem;
+}
+
+.discoverNowBtn {
+  width: 9.25rem;
+  height: 2.625rem;
+  flex-shrink: 0;
+  color: var(--primaryColor);
+  background-color: #e6f9f0;
+  border: none;
+  margin-left: 2.34rem;
+  cursor: pointer;
+}
+
+.discoverNowBtn::after{
+  content: url('./assets/Icon-long-arrow-green-right.png');
+  margin-left: 0.55rem;
 }
 
 /* ************************* Our Product styling starts here */
@@ -348,7 +421,7 @@ li:nth-child(1) {
 }
 
 /* ei css property ta arektu porte hobe */
-.singleProduct:nth-child(1){
+.singleProduct:nth-child(1) {
   border: 2px solid var(--primaryColor);
 }
 
@@ -464,3 +537,7 @@ li:nth-child(1) {
   align-items: center;
   margin: 2.13rem auto;
 }
+
+/* ************************* footer ad styling ends here */
+
+/* ************************* footer styling starts here */
