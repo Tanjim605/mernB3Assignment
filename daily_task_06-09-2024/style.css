@@ -10,6 +10,7 @@
   padding: 0;
   font-family: Inter, sans-serif;
   z-index: 50;
+  box-sizing: border-box;
 }
 
 body {
@@ -33,6 +34,10 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+}
+
+.hamburgerBtn {
+  visibility: hidden;
 }
 
 .logo {
@@ -62,7 +67,7 @@ li:nth-child(1) {
 /* ************************* hero styling start here */
 
 .hero {
-  height: 49.875rem;
+  /* height: 49.875rem; */
   max-width: var(--landingWidth);
   margin: 0 auto;
 }
@@ -119,8 +124,9 @@ li:nth-child(1) {
 }
 
 .brandLogos {
-  width: 35rem;
+  /* width: 35rem; */
   display: flex;
+
   justify-content: space-between;
   margin: 8.19rem 0 3.32rem 0;
   padding: 2.88rem 0;
@@ -160,7 +166,7 @@ li:nth-child(1) {
 .features {
   max-width: var(--landingWidth);
   margin: 7.53rem auto;
-  height: 11.5625rem;
+  /* height: 11.5625rem; */
   flex-shrink: 0;
   border-top: 1.5px solid #70707026;
   border-bottom: 1.5px solid #70707026;
@@ -193,7 +199,7 @@ li:nth-child(1) {
 .ourBenefit {
   max-width: var(--landingWidth);
   margin: 0 auto;
-  height: 38rem;
+  /* height: 38rem; */
   display: flex;
 }
 
@@ -206,6 +212,7 @@ li:nth-child(1) {
 .benefitLeft img {
   display: flex;
   margin: 0 auto;
+  flex-shrink: 0;
 }
 
 .benefitRight {
@@ -253,14 +260,14 @@ li:nth-child(1) {
 .ourStars {
   max-width: var(--landingWidth);
   margin: 11.44rem auto;
-  height: 38rem;
+  /* height: 38rem; */
   display: flex;
   flex-direction: row-reverse;
 }
 
 .starsRight {
   width: 33.8125rem;
-  height: 38rem;
+  /* height: 38rem; */
   background-color: var(--backgroundColor);
   flex-shrink: 0;
 }
@@ -269,7 +276,7 @@ li:nth-child(1) {
   display: flex;
   margin-left: auto;
   width: 27.8125rem;
-  height: 32.0625rem;
+  /* height: 32.0625rem; */
   flex-shrink: 0;
 }
 
@@ -363,7 +370,8 @@ li:nth-child(1) {
   flex-direction: column;
 }
 
-.third,.fourth{
+.third,
+.fourth {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -394,8 +402,8 @@ li:nth-child(1) {
   cursor: pointer;
 }
 
-.discoverNowBtn::after{
-  content: url('./assets/Icon-long-arrow-green-right.png');
+.discoverNowBtn::after {
+  content: url("./assets/Icon-long-arrow-green-right.png");
   margin-left: 0.55rem;
 }
 
@@ -541,3 +549,272 @@ li:nth-child(1) {
 /* ************************* footer ad styling ends here */
 
 /* ************************* footer styling starts here */
+footer {
+  max-width: var(--landingWidth);
+  margin: 0 auto;
+  color: #1d1d1f;
+  display: flex;
+  justify-content: space-between;
+}
+.part1 {
+  width: 17.75rem;
+}
+
+.socialIcons{
+  margin-top: 3.23rem;
+  margin-right: 11.47rem;
+  /* width: 7.27rem; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.part2,
+.part3 {
+  width: fit-content;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2.56rem;
+}
+
+footer p {
+  margin: 1rem auto;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.part4 {
+  width: 21.125rem;
+}
+
+.part4 input{
+  height: 3.125rem;
+  width: 10.81rem;
+  flex-shrink: 0;
+  border: none;
+  background-color: #F0F1EC;
+  margin-right: 0.94rem;
+  margin-top: 2.31rem;
+  padding-left: 1.5rem;
+}
+
+.part4 button {
+  width: 7.375rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+
+  background-color: var(--primaryColor);
+  color: #fff;
+  border: none;
+}
+
+.copyright {
+  width: fit-content;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+a{
+  color: #0041a9;
+  text-decoration: none;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$ responsive css starts here */
+@media (max-width: 1235px) {
+  body {
+    /* background-color: #000; */
+    margin: 1.5rem 1.69rem;
+  }
+
+  .siteNavigation {
+    display: none;
+  }
+
+  .hamburgerBtn {
+    visibility: visible;
+    width: 3.125rem;
+    height: 2.5625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .slice {
+    width: 2.125rem;
+    height: 3px;
+    background: var(--primaryColor);
+  }
+
+  /* img{
+    width: 100%;
+  } */
+
+  .heroContent {
+    flex-direction: column;
+    font-size: 3.1875rem;
+    text-align: center;
+  }
+
+  .heroLeftSide,
+  .heroRightSide,
+  .heroContent button,
+  .heroContent h1,
+  .heroContent p {
+    width: 100%;
+  }
+
+  /* .heroContent h1,
+  .heroContent p {
+    /* width: calc(100vw - 2.5rem); 
+    width: 100%;
+  } */
+
+  .brandLogos {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+  }
+
+  .brandLogos div {
+    margin: auto;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    /* gap: 3.7rem; */
+    justify-content: center;
+    margin: 3.84rem auto;
+  }
+
+  .singleFeature {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .ourBenefit {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefitLeft,
+  .benefitRight {
+    width: 90%;
+  }
+
+  #cookingWoman,
+  .benefitLeft img,
+  .benefitRight img,
+  .starsRight img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .benefitRight {
+    margin: 3.56rem auto;
+  }
+
+  .sectionPoints {
+    text-align: left;
+  }
+
+  .benefitLeft img {
+    margin: auto;
+  }
+
+  .ourStars {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 8.06rem;
+  }
+
+  .starsLeft {
+    margin: 2.2rem auto;
+    width: 90%;
+  }
+
+  .starsRight{
+    width: 100%;
+  }
+
+  .productAndFeedback {
+    flex-direction: column;
+    text-align: center;
+    gap: 0rem;
+  }
+
+  .getPromoBtn {
+    width: 100%;
+  }
+
+  .featureContainer div {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .singleFoodFeature {
+    flex-direction: column;
+  }
+
+  .third,
+  .fourth {
+    flex-direction: row;
+  }
+
+  .ourProduct {
+    text-align: center;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.44rem;
+  }
+
+  .footerAdText {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .beforeFooterAd button {
+    flex-shrink: 1;
+    margin: 3.25rem auto;
+    width: clamp(8.44rem, 90%, 13.125rem);
+  }
+
+  footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer div{
+    margin: 2.5rem auto;
+  }
+
+  .socialIcons{
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .emailHolder{
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+  }
+
+  .emailHolder input,
+  .emailHolder button{
+    width: 100%;
+  }
+
+  .copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
